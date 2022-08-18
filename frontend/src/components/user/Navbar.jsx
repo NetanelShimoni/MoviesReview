@@ -10,10 +10,9 @@ export default function Navbar() {
     const {isLoggedIn} = authInfo;
     return (
         <div className="bg-secondary shadow-sm shadow-gray-500">
-            <Container className=" p-0.75">
                 <div className="flex justify-between items-center">
                     <Link to="/">
-                        <img src="./logo192.png" alt="" className="h-6" />
+                        <img src="./logo.jpg" alt="" className="h-6" />
                     </Link>
                     <ul className="flex items-center space-x-4"><li>
                         <button onClick={toggleTheme} className="dark:bg-white bg-dark-subtle p-1 rounded">
@@ -33,7 +32,6 @@ export default function Navbar() {
                         </li>
                     </ul>
                 </div>
-            </Container>
         </div>
     );
 }
