@@ -11,7 +11,7 @@ import Navbar from "./components/user/Navbar";
 
 export default function app() {
   return (
-    <>
+    <div className={"bg-amber-500 dark:bg-black "} style={{ height: 1000 }}>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -22,6 +22,6 @@ export default function app() {
         <Route path="/auth/confirm-password" element={<ConfirmPassword />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
-    </>
+    </div>
   );
 }
