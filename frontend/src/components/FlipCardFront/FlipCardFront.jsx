@@ -11,7 +11,7 @@ export default function FlipCardFront(movie) {
           }
         />
       </div>
-      <div className={"text-gray-600 dark:text-amber-100 pt-1"}>
+      <div className={"text-gray-600 ml-2  pb-3 dark:text-amber-100 pt-1"}>
         <p>{movie.movie.name}</p>
         <p>{movie.movie.janer}</p>
       </div>
