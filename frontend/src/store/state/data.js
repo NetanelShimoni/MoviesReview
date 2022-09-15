@@ -1,5 +1,4 @@
-
-
 export const dataInitState = {
-   test: "hi"
+  test: "hi",
+  cardId: "",
 };
