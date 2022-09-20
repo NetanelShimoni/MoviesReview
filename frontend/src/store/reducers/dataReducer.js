@@ -7,7 +7,7 @@ const dataReducer = produce((state = dataInitState, action) => {
     case TEST:
       state.test = action.payload;
     case SET_ID_CARD: {
-      state.idCard = action.payload;
+      state.cardId = action.payload;
     }
     default:
       return state;

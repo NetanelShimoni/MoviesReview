@@ -1,5 +1,3 @@
-import store from "../store";
-
-export const getCardId = (state = store.getState()) => {
+export const getCardId = (state) => {
   return state.data.cardId;
 };
