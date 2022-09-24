@@ -9,6 +9,7 @@ import {
 } from "@mui/material";
 import React, { forwardRef } from "react";
 import YouTube from "react-youtube";
+import CloseIcon from "@mui/icons-material/Close";
 import { root } from "postcss";
 
 const Modal = ({ isOpen, title, subTitle, onClickConfirm }) => {
@@ -32,6 +33,10 @@ const Modal = ({ isOpen, title, subTitle, onClickConfirm }) => {
       onClose={() => alert("close")}
       className={{ root: classNameRoot }}
     >
+      <CloseIcon
+        onClick={() => onClickConfirm()}
+        className={"m-2 cursor-pointer"}
+      />
       <DialogTitle>{title}</DialogTitle>
       <DialogContent>
         <DialogContentText>{subTitle}</DialogContentText>
@@ -52,9 +57,7 @@ const Modal = ({ isOpen, title, subTitle, onClickConfirm }) => {
           },
         }}
       />
-      <DialogActions>
-        <Button onClick={() => onClickConfirm()}>OK</Button>
-      </DialogActions>
+      <DialogActions></DialogActions>
     </Dialog>
     // </div>
   );
