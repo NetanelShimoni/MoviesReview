@@ -15,18 +15,12 @@ export default function MovieCard(movie) {
     setIsFlipped(!isFlipped);
     dispatch(setIdCard(""));
   };
-  console.log("sadasdsadsadasddas", movie.movie.id);
   return (
-    // <div className={""}>
     <>
-      <ReactCardFLip
-        // cardStyles={{ back: false }}
-        isFlipped={isFlipped}
-        flipDirection={"horizontal"}
-      >
+      <ReactCardFLip isFlipped={isFlipped} flipDirection={"horizontal"}>
         <div
           onClick={handleOnClickOnCard}
-          className={`  cursor-pointer font-bold rounded-2xl  w-40  h-64 dark:hover:shadow-blue-300  shadow-2xl h-fit m-6  hover:border-4 dark:hover:border-4`}
+          className={`  cursor-pointer font-bold rounded-2xl  w-40 h-64 border-black border-black border-t border-b dark:hover:shadow-blue-300 dark:border-white  shadow-2xl h-fit m-6 dark:border-b dark:border-t  hover:border-4 dark:hover:border-4`}
           style={cardId.length > 0 ? { zIndex: "0" } : {}}
           // hidden={cardId.length > 0}
         >
